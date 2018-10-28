@@ -1,4 +1,6 @@
-# borealis
+![MDEV Digital](https://mdev.digital/social/githubLogo.svg)
+#[ Borealis ] :eight_spoked_asterisk:
+---
 
 > Nuxt.js stack for development funtimes
 
@@ -13,7 +15,7 @@ $ npm run dev
 
 # build for production and launch server
 $ npm run build
-$ npm start
+$ npm starts
 
 # generate static project
 $ npm run generate
