@@ -1,5 +1,5 @@
 ![MDEV Digital](https://mdev.digital/social/githubLogo.svg)
-#[ Borealis ] :eight_spoked_asterisk:
+# [ Borealis ] :eight_spoked_asterisk:
 ---
 
 > Nuxt.js stack for development funtimes
