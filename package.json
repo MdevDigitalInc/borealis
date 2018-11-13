@@ -19,8 +19,9 @@
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
+    "acorn": "^6.0.4",
     "babel-eslint": "^8.2.1",
-    "eslint": "^5.0.1",
+    "eslint": "^5.9.0",
     "eslint-loader": "^2.0.0",
     "eslint-plugin-vue": "^4.0.0",
     "node-sass": "^4.9.4",
