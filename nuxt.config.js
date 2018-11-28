@@ -56,6 +56,7 @@ module.exports = {
   build: {
     /*
     ** You can extend webpack config here
+    https://stackoverflow.com/questions/49144599/using-webpack-worker-loader-with-nuxt-js
     */
     extend(config, ctx) {
       // Run ESLint on save
