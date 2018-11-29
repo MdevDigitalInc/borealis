@@ -1,5 +1,5 @@
 <template lang="pug">
-  section.container
+  section.container.flex
     logo
     h1
       |BOREALIS
