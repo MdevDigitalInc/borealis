@@ -89,6 +89,10 @@ module.exports = {
           grid: true
         }
       }
-    }
+    },
+
+    minify: true,
+    minifyCSS: true,
+    minifyJS: true
   }
 }
