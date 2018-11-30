@@ -34,6 +34,8 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    // Google Analytics plugin -- NEEDS TO BE CONFIGURED PER CLIENT
+    { src: '~plugins/g-analytics.js', ssr: false }
   ],
 
   /*
