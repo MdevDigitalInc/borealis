@@ -58,7 +58,6 @@ module.exports = {
   build: {
     /*
     ** You can extend webpack config here
-    https://stackoverflow.com/questions/49144599/using-webpack-worker-loader-with-nuxt-js
     */
     extend(config, ctx) {
       // Run ESLint on save
@@ -71,7 +70,7 @@ module.exports = {
         })
       }
     },
-
+    // PostCSS - AKA Autoprefixer
     postcss: {
       // Add plugin names as key and arguments as value
       // Install them before as dependencies with npm or yarn
@@ -79,16 +78,16 @@ module.exports = {
         // Disable a plugin by passing false as value
         'postcss-url': false,
         'postcss-nested': {},
-        'postcss-responsive-type': {},
-        'postcss-hexrgba': {},
-        'postcss-preset-env': {
-          browsers: ['last 2 versions']
-        }
+        'postcss-responsive-type': false,
+        'postcss-hexrgba': false
       },
       preset: {
         // Change the postcss-preset-env settings
+        stage: 3,
         autoprefixer: {
-          grid: true
+          grid: true,
+          flexnox: true,
+          browsers: ['last 2 versions']
         }
       }
     },
