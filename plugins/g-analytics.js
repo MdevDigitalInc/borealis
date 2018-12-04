@@ -15,7 +15,7 @@ export default ({ app }) => {
   /*
   ** Set the current page
   */
-  // Chanbe UA-XXXXXXX-X to client GA account
+  // Chanbe UA-XXXXXXX-X to client GA account - TODO
   ga('create', 'UA-XXXXXXXX-X', 'auto')
   /*
   ** Every time the route changes (fired on initialization too)

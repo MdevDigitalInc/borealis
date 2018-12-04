@@ -34,8 +34,8 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    // Google Analytics plugin -- NEEDS TO BE CONFIGURED PER CLIENT
-    { src: '~plugins/g-analytics.js', ssr: false }
+    // Google Analytics plugin -- NEEDS TO BE CONFIGURED PER CLIENT - TODO
+    { src: '~plugins/g-analytics.js', ssr: false },
   ],
 
   /*
@@ -43,7 +43,9 @@ module.exports = {
   */
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    // Replace GTM-XXXXXXX With Client GTM code. - TODO
+    ['@nuxtjs/google-tag-manager', { id: 'GTM-XXXXXXX' }]
   ],
   /*
   ** Axios module configuration
