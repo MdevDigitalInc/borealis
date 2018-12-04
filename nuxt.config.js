@@ -7,14 +7,28 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'Page Title TODO',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { name: 'keywords', content: 'Client, Driven, Keywords, TODO' },
+      { hid: 'description', name: 'description', content: 'Client Description TODO' },
+      // FB Open Graph
+      { property:'fb:app_id', content: 'APP_ID_TODO' },
+      { property:'og:type', content: 'website' },
+      { property:'og:url', content: '//URL_TO_SITE_TODO' },
+      { property:'og:title', content: 'Page Title TODO' },
+      { property:'og:image', content: 'http://moreiradevelopment.io/social/moreira-development-twitcard.png' },
+      // Twitter Card
+      { name:'twitter:card', content: 'summary_large_image' },
+      { name:'twitter:site', content: '//URL_TO_SITE_TODO' },
+      { name:'twitter:title', content: 'Page Title TODO' },
+      { name:'twitter:description', content: 'Client Description TODO' },
+      { name:'twitter:image', content: 'http://moreiradevelopment.io/social/moreira-development-twitcard.png' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      // Add Google fonts or Font Awesome here.
     ]
   },
 
@@ -94,6 +108,7 @@ module.exports = {
       }
     },
 
+    // Minify - Production only
     minify: true,
     minifyCSS: true,
     minifyJS: true
