@@ -38,7 +38,7 @@ module.exports = {
       { rel: 'icon', size: '16x16', type: 'image/png', href: '/icons/favicon-16x16.png' },
       { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#fff' },
       { rel: 'shortcut icon', href: '/icons/favicon.ico' },
-      { rel: 'manifest', href: '/icons/site.webmanifest' }
+      { rel: 'manifest', href: '/icons/site.webmanifest' },
       // Typekit
       { rel: 'stylesheet', href: 'https://use.typekit.net/ubz4jze.css' },
       // Google Fonts
@@ -80,31 +80,6 @@ module.exports = {
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
-
-  /*
-  ** Build configuration
-  */
-  build: {
-    /*
-    ** You can extend webpack config here
-    */
-    extend(config, ctx) {
-      // Run ESLint on save
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-      }
-    }
-  }
-}
-
-    ]
-  },
-
   /*
   ** Customize the progress-bar color
   */
