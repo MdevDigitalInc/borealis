@@ -7,25 +7,30 @@ module.exports = {
   ** Headers of the page
   */
   head: {
+    // TODO - Update page title
     title: 'Page Title TODO',
+    // TODO - Update meta SEO ------------------------------------------------
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'keywords', content: 'Client, Driven, Keywords, TODO' },
       { hid: 'description', name: 'description', content: 'Client Description TODO' },
       // FB Open Graph
+      // TODO - Update FB Open graph based on project data
       { property:'fb:app_id', content: 'APP_ID_TODO' },
       { property:'og:type', content: 'website' },
       { property:'og:url', content: '//URL_TO_SITE_TODO' },
       { property:'og:title', content: 'Page Title TODO' },
       { property:'og:image', content: '/social/facebook-og.jpg' },
       // Twitter Card
+      // TODO - Update Twitter card based on project data
       { name:'twitter:card', content: 'summary_large_image' },
       { name:'twitter:site', content: '//URL_TO_SITE_TODO' },
       { name:'twitter:title', content: 'Page Title TODO' },
       { name:'twitter:description', content: 'Client Description TODO' },
       { name:'twitter:image', content: '/social/twitter-card.png' },
       // Favicon Themeing
+      // TODO - Update fabicon themeing
       { name:'theme-color', content: '#fff' },
       { name:'msapplication-TileColor', content: '#fff' },
       { name:'msapplication-config', content: '/icons/browserconfig.xml' }
@@ -39,6 +44,8 @@ module.exports = {
       { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#fff' },
       { rel: 'shortcut icon', href: '/icons/favicon.ico' },
       { rel: 'manifest', href: '/icons/site.webmanifest' },
+      // Fonts ----------------------------------------------------
+      // TODO - Update font calls according to project
       // Typekit
       { rel: 'stylesheet', href: 'https://use.typekit.net/ubz4jze.css' },
       // Google Fonts
@@ -49,81 +56,36 @@ module.exports = {
     ]
   },
 
-  /*
-  ** Customize the progress-bar color
-  */
+  // TODO - Update loading bar color
   loading: { color: '#16b1a9' },
 
-  /*
-  ** Global CSS
-  */
+  // Global CSS Call
   css: [
     '@/assets/styles/global-main.scss',
   ],
 
-  /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-  ],
-
-  /*
-  ** Nuxt.js modules
-  */
-  modules: [
-    // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios'
-  ],
-  /*
-  ** Axios module configuration
-  */
-  axios: {
-    // See https://github.com/nuxt-community/axios-module#options
-  },
-  /*
-  ** Customize the progress-bar color
-  */
-  loading: { color: '#16b1a9' },
-
-  /*
-  ** Global CSS
-  */
-  css: [
-    '@/assets/styles/global-main.scss',
-  ],
-
-  /*
-  ** Plugins to load before mounting the App
-  */
+  // Plugins
   plugins: [
     // Google Analytics plugin -- NEEDS TO BE CONFIGURED PER CLIENT - TODO
     // Edit the file in plugins/g-analytics.js
     { src: '~plugins/g-analytics.js', ssr: false },
   ],
 
-  /*
-  ** Nuxt.js modules
-  */
+  // Nuxt Modules
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
     // Replace GTM-XXXXXXX With Client GTM code. - TODO
     ['@nuxtjs/google-tag-manager', { id: 'GTM-XXXXXXX' }]
   ],
-  /*
-  ** Axios module configuration
-  */
+  // Axios Config
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
 
-  /*
-  ** Build configuration
-  */
+  // Build Instructions
   build: {
-    /*
-    ** You can extend webpack config here
-    */
+    // Extend WEBPACK here
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {

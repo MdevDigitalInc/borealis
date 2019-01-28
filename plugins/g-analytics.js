@@ -1,5 +1,4 @@
 /* eslint-disable */
-
 export default ({ app }) => {
   /*
   ** Only run on client-side and only in production mode
