@@ -21,6 +21,7 @@ module.exports = {
       { property:'og:type', content: 'website' },
       { property:'og:url', content: '//URL_TO_SITE_TODO' },
       { property:'og:title', content: 'Page Title TODO' },
+      { property:'og:description', content: 'Page Title TODO' },
       { property:'og:image', content: '/social/facebook-og.jpg' },
       // Twitter Card
       // TODO - Update Twitter card based on project data
