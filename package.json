@@ -16,21 +16,21 @@
   "dependencies": {
     "@moreira-development/sass-boilerplate": "^1.1.4",
     "@nuxtjs/axios": "^5.0.0",
-    "@nuxtjs/google-tag-manager": "^2.1.0",
+    "@nuxtjs/google-tag-manager": "^2.1.4",
     "cross-env": "^5.2.0",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.4.5"
   },
   "devDependencies": {
-    "acorn": "^6.0.5",
+    "acorn": "^6.1.1",
     "babel-eslint": "^8.2.1",
-    "eslint": "^5.12.1",
-    "eslint-loader": "^2.0.0",
+    "eslint": "^5.14.1",
+    "eslint-loader": "^2.1.2",
     "eslint-plugin-vue": "^4.0.0",
     "node-sass": "^4.11.0",
-    "nodemon": "^1.18.9",
+    "nodemon": "^1.18.10",
     "postcss": "^7.0.14",
     "postcss-hexrgba": "^1.0.1",
-    "postcss-nested": "^4.1.1",
+    "postcss-nested": "^4.1.2",
     "postcss-preset-env": "^6.5.0",
     "postcss-responsive-type": "^1.0.0",
     "postcss-url": "^8.0.0",
