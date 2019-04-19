@@ -1,8 +1,8 @@
 {
-  "name": "borealis",
+  "name": "borealis-nuxt",
   "version": "1.0.0",
-  "description": ";)",
-  "author": "tivrusky",
+  "description": "MDEV DIGITAL | We are a hybrid agency specializing in custom software development, branding and marketing",
+  "author": "MDEV Digital <contact@mdev.digital>",
   "private": true,
   "scripts": {
     "dev": "npm run precommit && nuxt",
@@ -11,14 +11,17 @@
     "lintcss": "stylelint '**/*.scss' --syntax scss",
     "generate": "npm run precommit && nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint && npm run lintcss"
+    "precommit": "npm run lint && npm run lintcss",
+    "build-staging": "npm run build && s3-website deploy && npm run clean",
+    "deploy-staging": "s3-website deploy",
+    "deploy-live": "./live-deploy.sh"
   },
   "dependencies": {
     "@moreira-development/sass-boilerplate": "^1.1.4",
     "@nuxtjs/axios": "^5.0.0",
     "@nuxtjs/google-tag-manager": "^2.1.4",
     "cross-env": "^5.2.0",
-    "nuxt": "^2.4.5"
+    "nuxt": "^2.6.2"
   },
   "devDependencies": {
     "acorn": "^6.1.1",
