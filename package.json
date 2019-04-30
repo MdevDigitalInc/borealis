@@ -17,7 +17,7 @@
     "deploy-live": "./live-deploy.sh"
   },
   "dependencies": {
-    "@moreira-development/sass-boilerplate": "^1.1.4",
+    "@moreira-development/crowbar-sass": "^0.1.1",
     "@nuxtjs/axios": "^5.0.0",
     "@nuxtjs/google-tag-manager": "^2.1.4",
     "cross-env": "^5.2.0",
