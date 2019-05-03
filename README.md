@@ -1,4 +1,5 @@
-![MDEV Digital](https://mdev.digital/social/githubLogo.svg)
+![MDEV Digital](https://mdevcdn.digital/images/githublogo.svg)
+
 # [ Borealis ] :eight_spoked_asterisk:
 ---
 
